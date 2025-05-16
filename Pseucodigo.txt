@@ -1,0 +1,19 @@
+Inicio Programa
+    Crear objeto tipo Grafo
+
+    Llamar grafo.cargarDesdeArchivo("logistica.txt")
+    Llamar grafo.cambiarClima("normal") // matriz actual = matriz con clima normal
+    Llamar grafo.floydWarshall
+
+    Mientras (true)
+        Mostrar menu principal
+        Leer opcion del usuario
+
+        Si la opcion=1 entonces
+            Pedir ciudad de origen
+            Pedir ciudad de destino
+            Llamar al grafo para obtener la ruta mas corta
+            Mostrar ruta mas corta y ciudades intermedias
+
+        Si la opcion=2 entonces
+            Llamar al grafo que calcula el centro
