@@ -17,3 +17,28 @@ Inicio Programa
 
         Si la opcion=2 entonces
             Llamar al grafo que calcula el centro
+            MOSTRAR ciudad central del grafo
+
+        Si la opción=3 entonces
+            MOSTRAR submenú de modificaciones
+            LEER opciónSubmenu
+
+        Si opciónSubmenu == "interrupción"
+            PEDIR ciudad1 y ciudad2
+            LLAMAR grafo.eliminarConexion(ciudad1, ciudad2)
+
+        SI opciónSubmenu == "nueva conexión"
+            PEDIR ciudad1, ciudad2 y tiempos en cada clima
+            LLAMAR grafo.agregarConexion(ciudad1, ciudad2, tiempos)
+
+        SI opciónSubmenu == "cambiar clima"
+            PEDIR tipoClima ("normal", "lluvia", etc.)
+            LLAMAR grafo.cambiarClima(tipoClima)
+            LLAMAR grafo.floydWarshall()
+
+        SINO SI opción == 4 ENTONCES
+            SALIR del programa
+
+    FIN MIENTRAS
+
+FIN PROGRAMA
